@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --color-body: #2f2144;
+    --color-sec: #231933;
+    --color-trd: #181122;
+    --color-for: #0c0811;
+    --color-black: #000;
+    --color-text-sec: #a6a6a6;
+    --color-text: #fff;
+    --color-err: #ff3131;
+    --color-check: #00bf63;
+
+    --font-main: 'Montserrat', sans-serif;
+    --font-sec: 'Anton', sans-serif;
+}
+
+.error {
+    background-color: var(--color-err) !important;
+}
+
+.u-flex {
+    display: flex !important;
+}
+.u-just-center {
+    justify-content: center !important;
+}
+.u-items-center {
+    align-items: center !important;
+}
+.u-flex-col {
+    flex-direction: column !important;
+}
+.u-text-center {
+    text-align: center !important;
+}

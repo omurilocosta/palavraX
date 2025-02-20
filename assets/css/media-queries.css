@@ -1,0 +1,28 @@
+@media screen and (max-width:1050px) {
+    body {
+        flex-direction: column;
+    }
+
+    .game-initial-page {
+        width: 100vw;
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .logo h1{
+        font-size: 6rem;
+    }
+    .logo:nth-child(2) h1{
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .logo h1{
+        font-size: 5.4rem;
+    }
+    .slogan {
+        font-size: 0.9rem;
+    }
+}

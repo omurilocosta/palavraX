@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-body);
+}
+
+.game-initial-page {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-logo {
+    width: 90%;
+    height: auto;
+}
+.logo h1{
+    font-family: var(--font-sec);
+    font-size: 8em;
+    font-weight: 900;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+.logo:nth-child(2) h1{
+    color: var(--color-trd);
+    font-size: 11em;
+}
+.slogan {
+    text-align: center;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 1em;
+}
+.game-logo-img img {
+    width: 50vw;
+}
+.game-buttons-option{
+    width: 70%;
+    gap: 20px;
+}
+
+.button-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+    background-color: var(--color-for);
+    box-shadow: 5px 5px 0 var(--color-black);
+}
+.button-option h2 {
+    color: var(--color-text);
+}
+.button-option:hover {
+    transform: scale(1.02);
+    transition: 150ms ease-in;
+}

@@ -1,0 +1,108 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-body);
+}
+
+.header__in-game {
+    height: 5vh;
+    padding: 0 16px;
+    background-color: var(--color-for);
+}
+.header__in-game .category {
+    width: 25vw;
+    color: var(--color-text);
+}
+.header__in-game .type-category {
+    width: 75vw;
+    color: var(--color-text-sec);
+}
+
+.content__in-game {
+    height: 75vh;
+}
+
+.word_x-area {
+    height: 10vh;
+}
+.word_x-area h1 {
+    color: var(--color-text);
+}
+
+.tips-area {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 65vh;
+    padding: 10px 60px;
+    
+}
+
+.tip-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--color-sec);
+    margin: 0 auto 50px auto;
+}
+.tip-item h3 {
+    color: var(--color-text);
+}
+
+.finish-round {
+    height: 20vh;
+    width: 100vw;
+    padding: 0 40px;
+}
+
+.finish-button {
+    padding: 10px 30px;
+    background-color: var(--color-for);
+}
+.finish-button h2 {
+    color: var(--color-text);
+}
+
+#modal-tip {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 20px;
+    background-color: var(--color-body);
+}
+.modal__content {
+    width: 100%;
+    height: 100%;
+    gap: 35px;
+}
+
+.modal__content h2 {
+    color: var(--color-text);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 32px;
+}
+
+#check, #close {
+    color: var(--color-text);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+#check {
+    background-color: var(--color-check);
+    box-shadow: 4px 4px 0 #00552c;
+}
+#close {
+    background-color: var(--color-err);
+    box-shadow: 4px 4px 0 #680000;
+}
+
+#check:hover, #close:hover {
+    transform: scale(0.9);
+    transition: 150ms ease-out;
+}
