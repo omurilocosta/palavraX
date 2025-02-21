@@ -6,7 +6,7 @@ PalavraX é um jogo de raciocínio e dedução em que você deve descobrir a pal
 O jogo combina lógica, conhecimento geral e um toque de mistério para testar suas habilidades. Com uma mecânica envolvente e dinâmica, PalavraX é perfeito para jogar com seus amigos para ver quem consegue adivinhar as palavras mais rápido.
 
 ### 🎮 Demonstração
-<img src='https://lh3.googleusercontent.com/d/1QPe8Lz6K0Qtrh4LvK0QAnI7dkR8dHUAy' >
+![Demonstração de PalavraX](https://drive.google.com/uc?export=view&id=1QPe8Lz6K0Qtrh4LvK0QAnI7dkR8dHUAy)
 
 ## 🕹 Como Jogar
 - O dono da rodada é o único que poderá ver a tela do jogo.
@@ -26,4 +26,6 @@ O jogo combina lógica, conhecimento geral e um toque de mistério para testar s
 - CSS para um design moderno e responsivo.
 - Banco de Dados para armazenar palavras, dicas e pontuações.
 ---
+
+Este jogo tem como inspiração o jogo Perfil.
 ### Fique ligado para futuras atualizações e novas categorias de palavras! 🚀
