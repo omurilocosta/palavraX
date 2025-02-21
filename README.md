@@ -24,11 +24,12 @@ O jogo combina lógica, conhecimento geral e um toque de mistério para testar s
 - JavaScript para a interatividade e dinâmica do jogo.
 - CSS para um design moderno e responsivo.
 - Banco de Dados para armazenar palavras, dicas e pontuações.
----
+
 ## 🚀 Futuras Implementações
 Aqui estão algumas funcionalidades planejadas para as próximas versões:
 - ✅ Adicionar e Remover jogadores.
 - ✅ Transforma inteiramente em um aplicativo fora da web.
   
 Este jogo tem como inspiração o jogo Perfil.
+---
 ### Fique ligado para futuras atualizações e novas categorias de palavras! 🚀
