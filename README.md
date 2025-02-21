@@ -31,5 +31,6 @@ Aqui estão algumas funcionalidades planejadas para as próximas versões:
 - ✅ Transforma inteiramente em um aplicativo fora da web.
   
 Este jogo tem como inspiração o jogo Perfil.
+
 ---
 ### Fique ligado para futuras atualizações e novas categorias de palavras! 🚀
