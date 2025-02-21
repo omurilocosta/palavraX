@@ -25,7 +25,7 @@ O jogo combina lógica, conhecimento geral e um toque de mistério para testar s
 - CSS para um design moderno e responsivo.
 - Banco de Dados para armazenar palavras, dicas e pontuações.
 ---
-##🚀 Futuras Implementações
+## 🚀 Futuras Implementações
 Aqui estão algumas funcionalidades planejadas para as próximas versões:
 - ✅ Adicionar e Remover jogadores.
 - ✅ Transforma inteiramente em um aplicativo fora da web.
