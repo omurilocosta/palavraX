@@ -7,6 +7,27 @@
         width: 100vw;
         min-height: 50vh;
     }
+
+    .points-area {
+        flex-direction: column;
+    }
+    .header__player {
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+    .players {
+        width: 100vw;
+        min-height: 30vh;
+        padding: 0 40px;
+    }
+    .points-value {
+        height: 15vh;
+        font-size: 4rem;
+    }
+    .footer__player {
+        height: 5vh;
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width:560px) {

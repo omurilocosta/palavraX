@@ -18,6 +18,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/_in_game.css">
+    <link rel="stylesheet" href="../css/modal_points.css">
     <link rel="stylesheet" href="../css/media-queries.css">
     <link rel="stylesheet" href="../css/vars.css">
 </head>
@@ -52,19 +53,19 @@
 
     </main>
     <footer class="finish-round u-flex u-just-center u-items-center">
-        <a href="">
+        <a id="finishBtn" href="#">
             <div class="finish-button">
                 <h2>FINALIZAR</h2>
             </div>
         </a>
     </footer>
 
-
+    <!-- MODAL TIPS  -->
     <div class="modal" id="modal-tip">
         <div class="modal__content u-flex u-flex-col u-items-center u-just-center">
             <h2 id="desc-tip" class="u-text-center"></h2>
             <div class="modal-buttons">
-                <a id="close" href="#">
+                <a id="close" href="#" onclick="contPoints()">
                     <i class='bx bx-x'></i>
                 </a>
                 <a id="check" href="">
@@ -73,7 +74,34 @@
             </div>
         </div>
     </div>
-
+    <!-- MODAL TIPS END  -->
+    
+    <!-- MODAL POINTS  -->
+    <div modalPoints class="modal-point">
+        <header class="header__points u-flex u-just-center u-items-center">
+            <div class="congrats-img"><i class='bx bx-party'></i></div>
+        </header>
+        <main class="points-area">
+            <div class="players u-flex u-flex-col u-items-center u-just-center">
+                <div class="header__player">JOGADOR DA RODADA</div>
+                <div id="points-round" class="points-value">00</div>
+                <div class="footer__player">PONTOS</div>
+            </div>
+            <div class="players u-flex u-flex-col u-items-center u-just-center">
+                <div class="header__player">JOGADOR GANHADOR</div>
+                <div id="points-winner" class="points-value">00</div>
+                <div class="footer__player">PONTOS</div>
+            </div>
+        </main>
+        <footer class="footer__points u-flex u-just-center u-items-center">
+            <a href="">
+                <div class="button__continue">
+                    <h2>CONTINUAR</h2>
+                </div>
+            </a>
+        </footer>
+    </div>
+    <!-- MODAL POINTS END  -->
 </body>
 <script defer src="../js/script.js"></script>
 </html>
