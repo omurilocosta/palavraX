@@ -1,5 +1,10 @@
 <?php 
     include './conn.php';
+    mysqli_set_charset($conn, "utf8");
+
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
 
     $id_category = random_category($conn);
     $category = get_name_category_by_id($conn, $id_category);
@@ -14,13 +19,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PalavraX</title>
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/_in_game.css">
-    <link rel="stylesheet" href="../css/modal_points.css">
     <link rel="stylesheet" href="../css/media-queries.css">
     <link rel="stylesheet" href="../css/vars.css">
+    <link rel="shortcut icon" href="../img/Palavra.png" type="image/x-icon">
 </head>
 <body>
     <header class="header__in-game u-flex u-items-center">
@@ -68,7 +72,7 @@
                 <a id="close" href="#" onclick="contPoints()">
                     <i class='bx bx-x'></i>
                 </a>
-                <a id="check" href="">
+                <a id="check" href="#">
                     <i class='bx bx-check'></i>
                 </a>
             </div>
@@ -83,12 +87,12 @@
         </header>
         <main class="points-area">
             <div class="players u-flex u-flex-col u-items-center u-just-center">
-                <div class="header__player">JOGADOR DA RODADA</div>
+                <div class="header__player">DONO DA RODADA</div>
                 <div id="points-round" class="points-value">00</div>
                 <div class="footer__player">PONTOS</div>
             </div>
             <div class="players u-flex u-flex-col u-items-center u-just-center">
-                <div class="header__player">JOGADOR GANHADOR</div>
+                <div class="header__player">JOGADOR PONTUADOR</div>
                 <div id="points-winner" class="points-value">00</div>
                 <div class="footer__player">PONTOS</div>
             </div>
@@ -102,6 +106,9 @@
         </footer>
     </div>
     <!-- MODAL POINTS END  -->
+    <a class="backBtn" href="../../index.php">
+        <i class='bx bx-x'></i>
+    </a>
 </body>
 <script defer src="../js/script.js"></script>
 </html>

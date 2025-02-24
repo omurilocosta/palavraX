@@ -25,7 +25,13 @@ const modalPoints = document.querySelector('.modal-point')
 finishBtn.addEventListener('click', () => {
     modalPoints.style.display = 'block'
 })
+const checkBtn = document.querySelector('#check')
+checkBtn.addEventListener('click', () => {
+    modalPoints.style.display = 'block'
+})
 // ? FUNCTION TO SET POINTS
+const points_winner = document.querySelector('#points-winner')
+const points_round = document.querySelector('#points-round')
 let d_points = 0
 let p_points = 20
 function contPoints() {
@@ -34,8 +40,12 @@ function contPoints() {
     
     if (d_points == 20) {
         modalPoints.style.display = 'block'
+        points_round.innerText = d_points
+        points_winner.innerText = p_points
     }
-    console.log('D ', d_points);
-    console.log('P ', p_points);
     
+    points_round.innerText = d_points
+    points_winner.innerText = p_points
 }
+points_round.innerText = d_points
+points_winner.innerText = p_points

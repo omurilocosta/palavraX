@@ -35,3 +35,13 @@
 .u-text-center {
     text-align: center !important;
 }
+
+.backBtn {
+    color: var(--color-sec);
+    border: none;
+    font-size: 2rem;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    border-radius: 100%;
+}

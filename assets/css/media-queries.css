@@ -37,6 +37,13 @@
     .logo:nth-child(2) h1{
         font-size: 8rem;
     }
+    .tip-item{
+        width: 60px;
+        height: 60px;
+    }
+    .tips-area {
+        padding: 10px 30px;
+    }
 }
 
 @media screen and (max-width:420px) {
@@ -45,5 +52,8 @@
     }
     .slogan {
         font-size: 0.9rem;
+    }
+    .container-instructions {
+        overflow-y: scroll;
     }
 }
