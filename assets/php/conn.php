@@ -1,24 +1,24 @@
 <?php 
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "palavra_x";
-    if ($conn = mysqli_connect($server, $username, $password, $database) ) {
-        //echo "Conectado!";
-    } else {
-        echo "Error: " . mysqli_connect_error();
-    }
-
-    // $host = "sql305.infinityfree.com";
-    // $dbname = "if0_38382368_palavrax";
-    // $user = "if0_38382368";
-    // $password = "oYMdRIP9qC";
-
-    // $conn = new mysqli($host, $user, $password, $dbname);
-
-    // if ($conn->connect_error) {
-    //     die("Conexão falhou: " . $conn->connect_error);
+    // $server = "localhost";
+    // $username = "root";
+    // $password = "";
+    // $database = "palavra_x";
+    // if ($conn = mysqli_connect($server, $username, $password, $database) ) {
+    //     //echo "Conectado!";
+    // } else {
+    //     echo "Error: " . mysqli_connect_error();
     // }
+
+    $host = "sql305.infinityfree.com";
+    $dbname = "if0_38382368_palavrax";
+    $user = "if0_38382368";
+    $password = "oYMdRIP9qC";
+
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
 
     function random_category($conn) {
         $sql = 'SELECT `id_category` FROM `category` ORDER BY RAND() LIMIT 1';
@@ -39,7 +39,7 @@
     };
 
     function random_word_by_category($conn, $id_category) {
-        $sql = "SELECT `name_wordX` FROM `wordx` WHERE `id_category_fk` = $id_category";
+        $sql = "SELECT `name_wordX` FROM `wordx` WHERE `id_category_fk` = $id_category ORDER BY RAND() LIMIT 1";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
         $word = $row['name_wordX'];

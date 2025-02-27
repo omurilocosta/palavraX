@@ -50,6 +50,7 @@ body {
 }
 .button-option h2 {
     color: var(--color-text);
+    font-size: 20px;
 }
 .button-option:hover {
     transform: scale(1.02);

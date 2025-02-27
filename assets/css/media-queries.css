@@ -44,6 +44,9 @@
     .tips-area {
         padding: 10px 30px;
     }
+    .word_x-area h1 {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:420px) {
